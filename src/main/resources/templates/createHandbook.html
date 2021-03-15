@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <title>Create New Product</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css" />
+    <script src= "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
+</head>
+<body>
+<div th:replace="~{fragments/navigation :: navigation}"></div>
+<div align="center">
+    <h1>Create New Handbook</h1>
+    <br />
+    <div class="col-sm-4">
+        <form action="#" th:action="@{/api/v1/createHandbook}" th:object="${handbook}" method="post">
+            <div alight="left">
+                <tr>
+                    <label class="form-label">Name</label>
+                    <td>
+                        <input type="hidden" th:field="*{id}" />
+                        <input type="text" th:field="*{name}" class="form-control" placeholder="Student Name" />
+                    </td>
+                </tr>
+            </div>
+            <div alight="left">
+                <tr>
+                    <label class="form-label">Title</label>
+                    <td><input type="text" th:field="*{title}" class="form-control" placeholder="Fee" /></td>
+                </tr>
+            </div>
+            <br>
+            <tr>
+                <td colspan="2"><button type="submit" class="btn btn-info">Save</button> </td>
+            </tr>
+            </table>
+        </form>
+    </div>
+</div>
+<div th:replace="~{fragments/footer :: footer}"></div>
+</body>
+</html>

@@ -11,7 +11,7 @@ select:-webkit-autofill:focus {
 }
 
 body {
-    background-color: #4b6fd9;
+    background: linear-gradient(-90deg, #00a2df, #4079f1);
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -32,9 +32,9 @@ body {
 
 .center h1 {
     text-align: center;
-    padding: 0 0 20px 0;
-    font-weight: 700;
-    color: #5b5b5b;
+    padding: 10px 0 20px 0;
+    font-weight: 300;
+    color: black;
     border-bottom: 1px solid silver;
 }
 
@@ -78,7 +78,7 @@ form .text_field {
     left: 0;
     width: 0;
     height: 2px;
-    background: #2691d9;
+    background: #00a2df;
     transition: .5s;
 }
 
@@ -97,8 +97,8 @@ input[type="submit"] {
     width: 50%;
     height: 50px;
     border: 1px solid;
-    background: #4e73df;
-    border-radius: 25px;
+    background: #00a2df;
+    border-radius: 5px;
     font-size: 18px;
     color: white;
     font-weight: 700;
